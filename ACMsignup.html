@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<article class="login">
+	<!--NAVBAR !-->
+		<nav class="nav navbar-default ">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Icon" aria-expanded="false" aria-controls="Icon">
+			<span class="sr-only">Toggle Navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+
+		</button>
+	<a href="#" ><img src="Img/Logo.jpg" alt="Logo" style="height: 80px; width:80px;float: left;">
+		<div style="text-align: right;">
+		<h3>IPEC ACM STUDENT CHAPTER </h3></a>
+		</div>
+		</div>
+		<div class="navbar-collapse collapse" id="Icon">
+		<ul class="nav navbar-nav navbar-right">
+		<li><a href="#"><h3><i class="fa fa-university" aria-hidden="true"></i> Home</h3></a></li>
+		<li><a href="#"><h3><i class="fa fa-info" aria-hidden="true"></i> About Us</h3></a></li>
+		<li class="active"><a href="ACMLogin.html"><h3><i class="fa fa-user" aria-hidden="true"></i> Login</h3></a></li>
+		</ul>
+		</div>
+		</div>
+		</nav>
+	<!--NAVBAR ENDS !-->
+	<!--FORM -->
+		<br><br><hr>
+		 <div class="row">
+     	<div class="col-md-4 col-md-offset-4">
+   	<div class="row">
+    	 <ul class="nav nav-pills">
+    	<li class="active"><a data-toggle="tab" href="#login-form"><h1>Login</h1></a></li>
+     	<li class="pull-right"><a data-toggle="tab" href="#SignUp-form"><h1>SignUp</h1></a></li>
+     	</ul>
+     	<hr>
+     	 <div class="tab-content">
+     	<div class="col-xs-12 tab-pane fade-in active" id="login-form">
+            <form id="login-form" style="display: block;" action="../Login">
+     	<div class="form-group">
+     	<label for="Username"></label>
+     	<input type="text" class="form-control" id="Username" placeholder="Username" />
+     	</div>
+     	<div class="form-group">
+     	<label for="Password"></label>
+     	<input type="password" name="password" class="form-control" id="Password" placeholder="Password">
+     	</div>
+     	<div class="form-group">
+    	<div class="row">
+     	<div class="col-xs-6 " style="float:left;">
+     	<input type="checkbox" name="RememberMe" id="RememberMe" />
+     	<label for="RememberMe" > <p class="lead">Remember Me</p></label>
+     	</div>
+     	<div class="col-xs-6 " style="float:right;">
+     	<a href="#" ><p class="lead">Forgot Password?</p></a>
+     	</div>
+     	</div>
+     	</div>
+     	<div class="form-group">
+     	<div class="row">
+     	<div class="col-xs-offset-4">
+     	<button type="submit" class="btn btn-primary btn-lg">Login</button>
+     	</div>
+     	</div>
+     	</div>
+     	</form>
+	   </div>
+	   <div class="col-xs-12 tab-pane fade-in" id="SignUp-form">
+	   <form id="SignUp-form" action="/" >
+	   <br><br><hr>
+		 <div class="row">
+     	<div class="col-md-4 col-md-offset-4">
+   	<div class="row">
+    	 <ul class="nav nav-pills">
+    	<li class="active"><a data-toggle="tab" href="#login-form"><h1>Login</h1></a></li>
+     	<li class="pull-right"><a data-toggle="tab" href="#SignUp-form"><h1>SignUp</h1></a></li>
+    	</ul>
+     	<hr>
+     	 <div class="tab-content">
+     	<div class="col-xs-12 tab-pane fade-in active" id="login-form">
+            <form id="sign-form" style="display: block;" action="../Signup">
+     	<div class="form-group">
+            <label for="Full Name"></label>Full Name:
+     	<input type="text" class="form-control" id="Fullname" placeholder="Fullname" />
+     	</div>
+                <div class="form-group">University Roll Number:
+     	<label for="University Roll Number"></label>
+    	<input type="text" name="UniversityRollNumber" class="form-control" id="University Roll Number" placeholder="13993208"> </div>
+        <div class="form-group">
+    	<label for="Year"></label>Year:
+     	<input type="number" name="Year" class="form-control" id="Year" placeholder="1">
+     	</div>
+        <div class="form-group">Branch:
+       <label for="Branch"></label>
+       <div class="form-group">
+     	<input type="text" name="Branch" class="form-control" id="Branch" placeholder="CSE">
+     	</div>
+       <div class="form-group">Section:     
+       <label for="Section"></label>
+     	<input type="text" name="Section" class="form-control" id="Section" placeholder="A">
+     	</div>
+       <div class="form-group">Email:
+       <label for="Email"></label>
+     	<input type="Email" name="Email" class="form-control" id="Email" placeholder="Email">
+     	</div>
+        <div class="form-group">Contact Number:
+        <label for="Contact Number"></label>
+     	<input type="number" name="Contact Number" class="form-control" id="Contact Number" placeholder="123456678">
+     	</div>
+             
+     	<div class="form-group">
+     	<div class="row">
+     	<div class="col-xs-6 " style="float:left;">
+     	<input type="checkbox" name="RememberMe" id="RememberMe" />
+     	<label for="RememberMe" > <p class="lead">Remember Me</p></label>
+     	</div>
+    	<div class="col-xs-6 " style="float:right;">
+    	<a href="#" ><p class="lead">Forgot Password?</p></a>
+     	</div>
+     	</div>
+     	</div>
+     	<div class="form-group">
+     	<div class="row">
+     	<div class="col-xs-offset-4">
+     	<button type="submit" class="btn btn-primary btn-lg">signup</button>
+     	</div>
+     	</div>
+     	</div>
+     	</form>
+	  
+     	</div>
+     	</div>
+     	</div>
+	   </form>
+	   </div>
+  	</div>
+	  	</div>
+	  	</div>
+	  	</div>
+	  <!--FORM ENDS HERE -->
+
+	</article>
+	  
+
+</body>
+</html>
